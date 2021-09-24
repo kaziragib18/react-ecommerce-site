@@ -1,0 +1,33 @@
+.cart__div{
+      padding: 15px 0px 0px 20px;
+}
+.cart__div h3{
+      font-size: 24px;
+}
+.cart__div span{
+      padding-left:2px;
+      font-size: 15px;
+      color: rgb(224, 123, 75);
+}
+
+#cart_title{
+      font-size: 24px;
+      color:  rgb(32, 170, 224);
+}
+
+.cart__div h5{
+      font-size: 15px;
+      font-weight: 600;
+}
+.cart__div p{
+      font-size: 14px;
+      font-weight: 600;
+}
+
+#cart_div{
+      width: 250px;
+      height: 360px;
+      background-color: rgba(238, 240, 241, 0.986);
+      padding: 10px 20px 10px 20px;
+      border-radius: 10%;
+}
