@@ -1,0 +1,29 @@
+.product{
+      display: flex;
+      border-bottom: 1px solid rgb(173, 170, 170);
+      margin-right: 5px;
+      padding-bottom: 10px;
+}
+.product__name{
+      color: #2769a7;
+      font-weight: 400px;
+      font-size: 16px;
+      
+}
+.product__img{
+      margin: 10px 25px 5px 0px;
+}
+.product__price{
+      font-weight: 600;
+}
+.product__button{
+      background-color: #fdc448;
+      width: 200px;
+      height: 30px;
+      border-radius: 4px;
+      border-color: #fdc448;
+      cursor: pointer;
+}
+.product__button:hover{
+      background-color:#e0a82e;
+}

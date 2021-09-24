@@ -3,11 +3,13 @@
 }
 
 .logo{
-      height: 50px;
+      height: 80px;
+      padding: 10px 0px 10px 0px;
 }
 
 .header nav{
-      background-color: black;
+      background-color: rgb(56, 166, 240);
+      
       line-height: 40px;
       
 }
