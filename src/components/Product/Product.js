@@ -19,9 +19,9 @@ const Product = (props) => {
 
                   <div>
                         <h5 className="product__name">{name}</h5>
-                        <h4 className="product__seller">Seller info: {seller}</h4>
-                        <p className="product__price">Price: ${price}</p>
-                        <p className="product__stock"><small>Only {stock} Left in Stock - order soon.</small></p>
+                        <h4 className="product__seller">Seller info: <span>{seller}</span></h4>
+                        <p className="product__price">Price: <span>${price}</span> </p>
+                        <p className="product__stock"><small>Only <span>{stock} </span>Left in Stock - order soon.</small></p>
                         <p className="icon__text">
                               Rating: <Rating
                               initialRating={star}

@@ -19,7 +19,7 @@ const Cart = (props) => {
                   product.quantity = 1;
             }
             total = total + (product.price * product.quantity);
-            //item ordered
+            //item ordered quantity
             totalQuantity = totalQuantity + product.quantity;
       }
 

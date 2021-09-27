@@ -18,15 +18,28 @@
       margin: 10px 25px 5px 0px;
 }
 .product__seller{
-      font-weight: 500;
-      font-size: 13px;
-      margin: 2px;
+      font-weight: 600;
+      font-size: 14px;
 }
+.product__seller span{
+      color: rgb(226, 40, 40);
+}
+
 .product__price{
+      font-size: 14px;
+      font-weight: 600;
+      
+}
+.product__price span{
       font-size: 14px;
       font-weight: 600;
       color: rgb(226, 40, 40);
 }
+.product__stock span{
+      font-weight: 600;
+      color: rgb(226, 40, 40);
+}
+
 .product__button{
       background-color: #fdc448;
       width: 200px;
