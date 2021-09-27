@@ -1,3 +1,8 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital@1&display=swap');
+
+*{
+      font-family: poppins, sans-serif;
+}
 .cart__div{
       padding: 15px 0px 0px 20px;
 }
@@ -26,8 +31,31 @@
 
 #cart_div{
       width: 250px;
-      height: 360px;
+      height: auto;
       background-color: rgba(238, 240, 241, 0.986);
       padding: 10px 20px 10px 20px;
-      border-radius: 10%;
+      border-radius: 15px;
+}
+.added__cart{
+      font-size: 13px;
+      font-weight: 500;
+      padding: 5px;
+      margin:  5px 0px 5px 0px;
+      border-radius: 10px;
+      background-color: rgb(217, 223, 223);
+      color: rgb(8, 113, 155);
+
+}
+#item_name{
+      display: flex;
+      color: rgb(32, 170, 224);
+      margin: 5px;
+      font-size: 12px;
+      font-weight: 600;
+}
+.cart__img{
+      margin: 5px;
+      width: 30%;
+      height: 30%;
+      border-radius: 7%;
 }

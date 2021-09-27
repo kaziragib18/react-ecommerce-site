@@ -1,3 +1,8 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital@1&display=swap');
+
+*{
+      font-family: poppins, sans-serif;
+}
 .product{
       display: flex;
       border-bottom: 1px solid rgb(173, 170, 170);
@@ -7,7 +12,7 @@
 .product__name{
       color: #2769a7;
       font-weight: 400px;
-      font-size: 16px;
+      font-size: 15px;
 }
 .product__img{
       margin: 10px 25px 5px 0px;
@@ -20,6 +25,7 @@
 .product__price{
       font-size: 14px;
       font-weight: 600;
+      color: rgb(226, 40, 40);
 }
 .product__button{
       background-color: #fdc448;
@@ -30,7 +36,7 @@
       cursor: pointer;
 }
 .product__button:hover{
-      background-color:#e0a82e;
+      background-color:hsl(41, 48%, 47%);
 }
 
 .icon__color{

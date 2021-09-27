@@ -34,7 +34,6 @@ const Product = (props) => {
                               className="product__button">
                               {cartIcon} Add to cart</button>
                   </div>
-
             </div>
       );
 };

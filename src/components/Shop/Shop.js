@@ -49,10 +49,13 @@ const Shop = () => {
 
       const handleAddToCart =(product) =>{
             // console.log(product);
+      
             const newCart = [...cart, product]; //spread operation
             setCart(newCart);
             //save to local storage
+
             addToDb(product.key);
+
       }
       //search product
       const handleSearch = event =>{
