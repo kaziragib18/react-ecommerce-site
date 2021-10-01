@@ -10,7 +10,7 @@ const Cart = (props) => {
       // const{cart} = props;
       // const total = cart.reduce((previous, product) => previous + product.price, 0);
       
-      const{ cart } = props;
+      const{cart} = props;
       // console.log(cart);
       let totalQuantity = 0;
       let total = 0;
