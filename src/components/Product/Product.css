@@ -49,7 +49,7 @@
       cursor: pointer;
 }
 .product__button:hover{
-      background-color:hsl(41, 48%, 47%);
+      background-color:hsl(41, 64%, 50%);
 }
 
 .icon__color{

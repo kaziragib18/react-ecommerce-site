@@ -11,7 +11,8 @@ const Cart = (props) => {
       // const total = cart.reduce((previous, product) => previous + product.price, 0);
       
       const{cart} = props;
-      // console.log(cart);
+      console.log(props.children);
+
       let totalQuantity = 0;
       let total = 0;
       for(const product of cart){
@@ -45,6 +46,8 @@ const Cart = (props) => {
                         <hr />
                         <p>Grand Total: <span>${grandTotal.toFixed(2)}</span></p>
                         <hr />
+                        {props.children}
+
                    </div>
                        
             </div>
