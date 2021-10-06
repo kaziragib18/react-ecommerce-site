@@ -1,10 +1,11 @@
 import React from 'react';
-import img from '../../images/giphy.gif'
+import img from '../../images/Order-placed.gif'
+import './PlaceOrder.css';
 
 const PlaceOrder = () => {
       return (
-            <div>
-                  <img src={img} alt="" />
+            <div className="order__div">
+                  <img className="order__img" src={img} alt="" />
             </div>
       );
 };
