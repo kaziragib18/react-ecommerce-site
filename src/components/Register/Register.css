@@ -1,0 +1,9 @@
+.register__form{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+}
+input{
+      margin: 5px;
+      padding: 10px;
+}

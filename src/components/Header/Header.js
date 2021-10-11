@@ -14,18 +14,27 @@ const Header = () => {
                               color: "black"
                             }}>
                                   Shop</NavLink>
+
                         <NavLink to="/review"
                         activeStyle={{
                               fontWeight: "bold",
                               color: "black"
                             }}>
                                   Order Review</NavLink>
+
                         <NavLink to="/inventory"
                         activeStyle={{
                               fontWeight: "bold",
                               color: "black"
                             }}>
                                   Inventory</NavLink>
+
+                        <NavLink to="/login"
+                        activeStyle={{
+                              fontWeight: "bold",
+                              color: "black"
+                            }}>
+                                  Login</NavLink>
                   </nav>
             </div>
       );
