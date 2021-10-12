@@ -1,8 +1,11 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import useAuth from '../../hooks/useAuth';
 import './Login.css'
 
 const Login = () => {
+      const { signInUsingGoogle } = useAuth();
+
       return (
             <div className="login__form">
                   <div>
@@ -16,7 +19,8 @@ const Login = () => {
                         </form>
                         <p>new to Panda Shop? <Link to="/register">Create Account</Link></p>
                         <div>------- or ------</div>
-                        <button className="product__button">Google Sign In</button>
+                        <button className="product__button"
+                        onClick={signInUsingGoogle}>Google Sign In</button>
                   </div>
             </div>
       );
