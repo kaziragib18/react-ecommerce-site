@@ -37,4 +37,7 @@ Step-4: create auth context hoot( useAuth)
 Step-5: Create private route
 1. Create private Route
 2. Set private route
+-----------------------------
+Step-6: Redirect after login
+1. after login redirect user to desired destination
 */

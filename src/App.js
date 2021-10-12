@@ -9,6 +9,8 @@ import Login from './components/Login/Login'
 import Shop from './components/Shop/Shop';
 import Register from './components/Register/Register';
 import AuthProvider from './context/AuthProvider';
+import PrivateRoute from './components/PrivateRoute/PrivateRoute';
+import Shipping from './components/Shipping/Shipping';
 
 function App() {
   return (
@@ -30,13 +32,17 @@ function App() {
             <OrderReview></OrderReview>
             </Route>
   
-            <Route path='/inventory'>
+            <PrivateRoute path='/inventory'>
             <Inventory></Inventory>
-            </Route>
+            </PrivateRoute>
   
-            <Route path='/placeorder'>
+            <PrivateRoute path='/shipping'>
+            <Shipping></Shipping>
+            </PrivateRoute>
+  
+            <PrivateRoute path='/placeorder'>
             <PlaceOrder></PlaceOrder>
-            </Route>
+            </PrivateRoute>
   
             <Route path='/login'>
             <Login></Login>
