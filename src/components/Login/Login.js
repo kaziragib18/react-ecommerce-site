@@ -28,7 +28,7 @@ const Login = () => {
                               <br />
                               <input type="submit" value="Submit" />
                         </form>
-                        <p>new to Panda Shop? <Link to="/register">Create Account</Link></p>
+                        <p>New to Panda shop website? <Link to="/register">Create Account</Link></p>
                         <div>------- or ------</div>
                         <button className="product__button"
                         onClick={handleGoogleLogin}>Google Sign In</button>
