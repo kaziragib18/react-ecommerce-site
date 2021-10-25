@@ -13,7 +13,7 @@ const Shipping = () => {
       };
 
       return (
-            <div>
+            <div className="shipping__div">
                   <form className="shipping__form" onSubmit={handleSubmit(onSubmit)}>
 
                         <input placeholder="Your name" defaultValue={user.displayName} {...register("name")} />
@@ -24,7 +24,7 @@ const Shipping = () => {
                         <input placeholder="Phone number" defaultValue="" {...register("phone number",  { required: true })} />
                         <input placeholder="Address" defaultValue="" {...register("address",  { required: true })} />
                         <input placeholder="City" defaultValue="" {...register("city",  { required: true })} />
-                        <input type="submit" />
+                        <button className="button">Submit</button>
                   </form>
             </div>
       );

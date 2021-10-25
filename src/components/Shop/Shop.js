@@ -10,18 +10,24 @@ const Shop = () => {
       const [products, setProducts] = useState([]);
       const [cart, setCart] = useState([]);
       const [displayProducts, setDisplayProducts] = useState([]);
+      //Applying pagination
+      const [pageCount, setPageCount] = useState(0);
 
       useEffect(() => {
             // console.log('product api called')
-            fetch('./products.json')
+            fetch('http://localhost:5000/products')
                   .then(res => res.json())
                   .then(data => {
-                        setProducts(data);
+                        setProducts(data.products);
 
                         //display initial product data
-                        setDisplayProducts(data);
+                        setDisplayProducts(data.products);
                         // console.log('product recieved');
 
+                        //pagination
+                        const count = data.count;
+                        const pageNumber = Math.ceil(count/10);
+                        setPageCount(pageNumber);
                   });
       }, []);
 
