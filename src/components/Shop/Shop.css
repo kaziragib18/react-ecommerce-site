@@ -23,3 +23,15 @@
       margin-right: 10px;
       margin-left: 50px;
 }
+
+.pagination{
+      margin: 40px;
+}
+.pagination button{
+      padding: 5px 13px;
+      margin-right: 20px;
+}
+.pagination .selected{
+      background-color: cornflowerblue;
+      color: cornsilk;
+}

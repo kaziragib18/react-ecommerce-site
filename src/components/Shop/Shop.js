@@ -11,11 +11,14 @@ const Shop = () => {
       const [cart, setCart] = useState([]);
       const [displayProducts, setDisplayProducts] = useState([]);
       //Applying pagination
+
       const [pageCount, setPageCount] = useState(0);
+      const [page, setPage] = useState(0);
+      const size = 10;
 
       useEffect(() => {
             // console.log('product api called')
-            fetch('http://localhost:5000/products')
+            fetch(`http://localhost:5000/products?page=${page}&&size=${size}`)
                   .then(res => res.json())
                   .then(data => {
                         setProducts(data.products);
@@ -26,10 +29,10 @@ const Shop = () => {
 
                         //pagination
                         const count = data.count;
-                        const pageNumber = Math.ceil(count/10);
+                        const pageNumber = Math.ceil(count / size);
                         setPageCount(pageNumber);
                   });
-      }, []);
+      }, [page]);
 
       useEffect(() => {
             // console.log('local storage called');
@@ -103,6 +106,17 @@ const Shop = () => {
                                     >
                                     </Product>)
                               }
+                              {/* pagination  */}
+                              <div className="pagination">
+                                    {
+                                          [...Array(pageCount).keys()].map(number =>
+                                                <button
+                                                className={number === page ? 'selected' : ''}
+                                                      key={number}
+                                                      onClick={() => setPage(number)}>{number + 1}
+                                                </button>)
+                                    }
+                              </div>
                         </div>
                         <div className="cart__container">
                               <Cart cart={cart}>
