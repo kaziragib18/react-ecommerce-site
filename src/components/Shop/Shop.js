@@ -4,14 +4,15 @@ import Product from '../Product/Product';
 import { addToDb, getStoredCart } from '../../utilities/fakedb'
 import './Shop.css';
 import { Link } from 'react-router-dom';
+import useCart from '../../hooks/useCart';
 
 
 const Shop = () => {
       const [products, setProducts] = useState([]);
-      const [cart, setCart] = useState([]);
+      const [cart, setCart] = useCart();
       const [displayProducts, setDisplayProducts] = useState([]);
+      
       //Applying pagination
-
       const [pageCount, setPageCount] = useState(0);
       const [page, setPage] = useState(0);
       const size = 10;
