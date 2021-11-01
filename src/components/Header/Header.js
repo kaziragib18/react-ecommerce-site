@@ -32,6 +32,12 @@ const Header = () => {
                                     color: "black"
                               }}>
                               Inventory</NavLink>
+                              {user.email && <NavLink to="/orders"
+                              activeStyle={{
+                                    fontWeight: "bold",
+                                    color: "black"
+                              }}>
+                             Orders</NavLink>}
                         {user.email &&
                               <span style={{ color: 'white' }}>Hello {user.displayName} </span>
                         }
