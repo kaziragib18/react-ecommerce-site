@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import { getAuth, signInWithPopup, GoogleAuthProvider, onAuthStateChanged, signOut } from "firebase/auth";
+import { getAuth, signInWithPopup, GoogleAuthProvider, onAuthStateChanged, getIdToken, signOut } from "firebase/auth";
 import initializeAuthentication from "../Firebase/firebase.init";
 
 initializeAuthentication();
@@ -11,8 +11,8 @@ const useFirebase = () => {
       const googleProvider = new GoogleAuthProvider();
 
       const signInUsingGoogle = () => {
-           return signInWithPopup(auth, googleProvider)
-                  
+            return signInWithPopup(auth, googleProvider)
+
       }
       const logOut = () => {
             signOut(auth)
@@ -23,8 +23,11 @@ const useFirebase = () => {
 
       //To see if user auth state changed or not
       useEffect(() => {
-         const unsubscribe = onAuthStateChanged(auth, (user) => {
+            const unsubscribe = onAuthStateChanged(auth, (user) => {
                   if (user) {
+                        //JWT token firebase
+                        getIdToken(user)
+                              .then(idToken => localStorage.setItem('idToken', idToken))
                         setUser(user);
                   }
             });
